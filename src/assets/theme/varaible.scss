@@ -1,0 +1,20 @@
+:root {
+    --primary-color: #D92228;
+    --primary-hover-color: #C12026;
+}
+$enable-negative-margins: true;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+$bodyfont:'Lato', sans-serif;
+$headingfont:'Montserrat', sans-serif;
+$stylishfont: 'Calafia-Regular';
+
+/*Theme Colors*/
+$bodycolor: #fff;
+$headingtext: #333333;
+$bodytext: #666; 
+$primarycolor: #FE5800; 
+$themecolor-alt: #26c6da;
+$themecolor-dark: #028ee1;

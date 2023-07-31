@@ -1,0 +1,97 @@
+<section class="home-sec">
+        <div class="inner-sec">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="text-three">
+                            <h1 class="text"> Myanmar</h1>
+                            <div class="txt-general">
+                                <span class="text-one">General</span><span class="text-one" style="text-align: right;">
+                                    Practitioner</span>
+                            </div>
+                            <h1 class="text-two">Education</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vision-section">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="vision-one">
+                        <h3 class="vision-txt"> Vision</h3>
+                        <p class="para-section">
+                            Improving access to coordinated and compassionate quality primary health services
+                            delivered by trained and competent GPs.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-md-3">
+                    <img src="assets/images/image-01.png" alt="" class=" bg-images">
+                </div>
+            </div>
+        </div>
+
+        <div class="mission-section">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                             <img src="assets/images/mask-group-01.png" alt="" class="bg-images-one">
+                    
+                        </div>
+                    <div class="col-md-8">
+                        <div class="mission-css">
+                            <h3 class="mission-txt"> Mission</h3>
+                            <p class="para-sec">
+                                Enhancing the professional development of general practitioners by creating an enabling
+                                learning culture and building a network with healthcare stakeholders to deliver standard
+                                quality care and services to individuals and communities . </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        <div class="main-section">
+            <div class="container">
+                <h3 class="main-txt"> Main Links&nbsp;<i class="fa fa-circle" aria-hidden="true"></i></h3>
+                <div class="row">
+                    <div class="col-md-3" *ngFor="let item of data.slice(0, 4)">
+                        <div class="card" [ngStyle]="{'background-image':item.color}">
+                            <div class="hover-img">
+                                <img [src]="item.icon" class="img-fluid">
+                                <span class="link-image">
+                                    <img [src]="item.link" alt="" class="img-fluid">
+                                </span>
+                                <p class="text-name" [routerLink]="['/link']">{{item.title}} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="Latest-section">
+            <div class="container">
+                <h3 class="main-txt">Latest News & Events&nbsp;<i class="fa fa-circle" aria-hidden="true"></i></h3>
+                <div class="row align-items-center">
+                    <div class="col-md-3" *ngFor="let item of news">
+                        <div class="card_">
+                            <div class="hover-img">
+                                <img [src]="item.imageUrl" alt="" class="img-fluid ">
+                            </div>
+                            <div class="card-body">
+                                <p class="new-text"> {{item.Date}}</p>
+                                <h2 class="para">{{item.title}}</h2>
+                                <p class="desc"> {{item.description | slice:0:80}}
+                                    <!-- <span *ngIf="item.desclength > 80">...</span> -->
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<app-footer></app-footer>

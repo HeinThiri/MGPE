@@ -1,0 +1,52 @@
+.Link-Page{
+ background-image: url("/assets/images/bg-image.png"),linear-gradient(to right top, #ad8cf6, #b295f3, #b79df1, #bca6ee, #c1aeeb);
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: right 2% bottom 15%;
+}
+
+.image-sec{
+    position: relative;
+    top:-150px;
+    left:-100px;
+}
+.link-image{
+    float:right;
+    padding-top: 10px;
+}
+.text-name{
+    padding-top:5px;
+    font-size: 15px;
+    color:#101111 !important;
+
+}
+.title{
+    padding: 10px;
+    margin-top: 80px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff !important;
+}
+.card {
+    padding: 15px;
+    margin-bottom:10px;
+
+  }
+  
+  .desc {
+    color: #4a4949;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .hover-img {
+    overflow: hidden;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 20px;
+   
+  }
+  
+  .card_:hover .para {
+    color: var(--primary-color);
+  }

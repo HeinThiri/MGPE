@@ -1,0 +1,97 @@
+
+  
+.me2 {
+    margin-right: 15px;
+}
+.active{
+    color : #FE5800 !important;
+    font-weight: bold;
+}
+
+.header-top{
+    padding: 10px 0;
+        display: flex;
+        flex-grow: 1;
+        flex-direction: row;
+    
+    p{
+        font-size:12px;
+        font-family: 'Montserrat';
+    }
+    i{
+        padding-right:15px;
+        color: #FE5800;
+    }
+}
+
+.headerbar{
+    border-bottom:1px solid #dddddd99;
+}
+
+.active {
+    color: var(--primary-color) !important;
+    font-weight: bold;
+}
+
+.socialicon {
+    a{
+        i{
+            color: #1B74E4 !important;
+        }
+    }
+    a:hover{
+        i{
+        color:#FE5800;
+    }
+    }
+    
+}
+
+.nav-link{
+    font-size:18px;
+    font-weight: 700;
+    color:#003F8D !important
+}
+
+.nav-link:hover{
+    color: #FE5800;
+}
+
+.navbar{
+    padding-top:0;
+    padding-bottom:0;
+    background-image: linear-gradient(to right top, #bda7ee, #bea9ed, #bfabed, #c0acec, #c1aeeb);
+}
+@media (max-width: 768px) {
+    .icon-address {
+      display: none;
+    }
+    .me2{
+        margin-top:11px;
+    }
+    .header-top i{
+        padding-right: 5px;
+    }
+    .span-txt{
+        font-size: 11px;
+    }
+  }
+  .navbar-brand{
+    font-size:18px;
+    font-weight: 700;
+    color:#003F8D !important;
+  }
+  
+  /* //HeinThrru */
+  .custom-tab.active {
+    background: transparent !important;
+    color:#003F8D!important;
+    border-bottom: 3px solid #003F8D!important;
+    border-radius: 0px !important;
+}
+
+.nav>li>a.active {
+    border-bottom: 3px solid #003F8D !important;
+}
+
+
