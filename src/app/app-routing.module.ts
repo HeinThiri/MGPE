@@ -4,7 +4,7 @@ import { LinkPageComponent } from './Pages/link-page/link-page.component';
 import { HomeComponent } from './Pages/home/home.component';
 
 const routes: Routes = [
-  {path:'link',component:LinkPageComponent},
+  {path:'link/:id',component:LinkPageComponent},
   {path:'',component:HomeComponent}
 ];
 

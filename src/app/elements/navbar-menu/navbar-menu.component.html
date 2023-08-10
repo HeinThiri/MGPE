@@ -1,0 +1,31 @@
+<nav class="navbar">
+    <div class="container d-flex">
+        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="">
+         <span class="text"> Myanmar General Practitioners Education </span>
+        </a>
+    <ul class="nav-links" [ngClass]="{'show': isMobileMenuOpen}">
+      <li class="nav-item custom-tab "[routerLink]="['']">
+        <a class="nav-link">Home</a>
+      </li>
+      <li class="nav-item dropdown" (click)="toggleDropdown()">
+        <a class="nav-link">Link</a>
+        <ul class="dropdown-menu" [class.active]="isDropdownActive" >
+          <li [routerLinkActive]="'active'" *ngFor="let item of data">
+            <a [routerLink]="['/link', item.id]"
+                [queryParams]="{ name: item.title }">{{item.title}}</a>
+        </li>
+          </ul>
+      </li>
+      <li class="nav-item"[ngClass]="{ active: ('/news') }" >
+        <a class="nav-link">News & Events</a>
+      </li>
+     
+    </ul>
+    <div class="mobile-menu-icon" (click)="toggleMobileMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </div>
+  </nav>
+  
